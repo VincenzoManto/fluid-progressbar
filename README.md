@@ -53,10 +53,10 @@ Now, you can use the `<fluid-progressbar>` component in your templates:
 ```html
 <fluid-progressbar
   [progress]="progress"
-  [mouseInfluence]="0.5"
+  [mouseEffect]="0.5"
   [gravityX]="0.1"
   [gravityY]="0.05"
-  [mouseRepel]="true"
+  [invertMouseAction]="true"
   [groupColours]="['#ff0000', '#00ff00', '#0000ff']">
   <h1>{{progress}}%</h1>
 </fluid-progressbar>
@@ -68,10 +68,10 @@ Now, you can use the `<fluid-progressbar>` component in your templates:
 <div>
   <fluid-progressbar
     [progress]="progressValue"
-    [mouseInfluence]="0.1"
+    [mouseEffect]="0.1"
     [gravityX]="0.2"
     [gravityY]="0.1"
-    [mouseRepel]="true"
+    [invertMouseAction]="true"
     [groupColours]="['#0055ff', '#0077ff', '#1177ff', '#11aaff']">
     <h1>{{progressValue}}%</h1>
   </fluid-progressbar>
@@ -83,10 +83,10 @@ Now, you can use the `<fluid-progressbar>` component in your templates:
 | Property        | Type      | Default Value         | Description                                                   |
 | --------------- | --------- | --------------------- | ------------------------------------------------------------- |
 | `progress`      | `number`  | `0.1`                 | The progress percentage, which dynamically updates the bar.    |
-| `mouseInfluence`| `number`  | `1`                   | Strength of the mouse's influence on the progress particles.   |
+| `mouseEffect`| `number`  | `1`                   | Strength of the mouse's influence on the progress particles.   |
 | `gravityX`      | `number`  | `0`                   | Horizontal gravity effect on the particles.                    |
 | `gravityY`      | `number`  | `0.1`                 | Vertical gravity effect on the particles.                      |
-| `mouseRepel`    | `boolean` | `false`               | If true, particles will be repelled by the mouse.              |
+| `invertMouseAction`    | `boolean` | `false`               | If true, particles will be repelled by the mouse.              |
 | `groupColours`  | `string[]`| `['#0055ff', '#0077ff', '#1177ff', '#11aaff']` | Array of colors for the different groups of particles.         |
 
 ## Running Tests
@@ -113,7 +113,7 @@ This document outlines the test coverage for the `fluid-progressbar` component. 
 ### 2. Mouse Influence
 
 - **Test:** Verify that the mouse influence affects the progress particles as expected.
-- **Expected Result:** The particles should move according to the `mouseInfluence` value.
+- **Expected Result:** The particles should move according to the `mouseEffect` value.
 
 ### 3. Gravity Effects
 
@@ -122,7 +122,7 @@ This document outlines the test coverage for the `fluid-progressbar` component. 
 
 ### 4. Mouse Repel
 
-- **Test:** Verify that the particles are repelled by the mouse when `mouseRepel` is true.
+- **Test:** Verify that the particles are repelled by the mouse when `invertMouseAction` is true.
 - **Expected Result:** The particles should move away from the mouse pointer.
 
 ### 5. Custom Colors
