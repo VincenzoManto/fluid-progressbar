@@ -12,7 +12,7 @@ Fluid Progress Bar is an Angular component that provides a customizable, fluid-l
 *Based on [Fluid Simulation CodePen](https://codepen.io/dissimulate/pen/nLNMKQ) by [Dissumulate](https://codepen.io/dissimulate) who must be thanked*
 
 
-![Fluid Progress Bar](media/example.gif)
+![Fluid Progress Bar](https://github.com/VincenzoManto/fluid-progressbar/raw/main/media/example.gif)
 
 ## Features
 
