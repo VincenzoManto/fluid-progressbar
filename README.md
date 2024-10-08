@@ -1,27 +1,139 @@
-# FluidProgressbar
+# Fluid Progress Bar Library
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+![Tests](https://img.shields.io/github/actions/workflow/status/VincenzoManto/fluid-progressbar/test.yml?branch=main)
+![Coverage](https://img.shields.io/codecov/c/github/VincenzoManto/fluid-progressbar)
+![Downloads](https://img.shields.io/npm/dw/fluid-progressbar)
+![License](https://img.shields.io/npm/l/fluid-progressbar)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Fluid Progress Bar is an Angular component that provides a customizable, fluid-like progress bar with interactive effects such as gravity, mouse influence, and custom color groups.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Customizable progress bar:** Set the progress value dynamically.
+- **Mouse interaction:** Influence the progress bar particles with mouse movement.
+- **Gravity:** Simulate gravity effects on progress bar elements.
+- **Custom colors:** Define color groups for the progress bar.
+- **Smooth animations** based on progress changes.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To install the library via npm:
 
-## Running unit tests
+```bash
+npm install fluid-progressbar --save
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+To use the `fluid-progressbar` component in your Angular application:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 1. Import the Module
 
-## Further help
+First, import the `FluidProgressbarModule` into your application module:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```typescript
+import { FluidProgressbarModule } from 'fluid-progressbar';
+
+@NgModule({
+  imports: [FluidProgressbarModule]
+})
+export class AppModule {}
+```
+
+### 2. Use the Component
+
+Now, you can use the `<fluid-progressbar>` component in your templates:
+
+```html
+<fluid-progressbar
+  [progress]="progress"
+  [mouseInfluence]="0.5"
+  [gravityX]="0.1"
+  [gravityY]="0.05"
+  [mouseRepel]="true"
+  [groupColours]="['#ff0000', '#00ff00', '#0000ff']">
+</fluid-progressbar>
+```
+
+### Example
+
+```html
+<div>
+  <fluid-progressbar
+    [progress]="progressValue"
+    [mouseInfluence]="1"
+    [gravityX]="0.2"
+    [gravityY]="0.1"
+    [mouseRepel]="true"
+    [groupColours]="['#0055ff', '#0077ff', '#1177ff', '#11aaff']">
+  </fluid-progressbar>
+</div>
+```
+
+## Input Properties
+
+| Property        | Type      | Default Value         | Description                                                   |
+| --------------- | --------- | --------------------- | ------------------------------------------------------------- |
+| `progress`      | `number`  | `0.1`                 | The progress percentage, which dynamically updates the bar.    |
+| `mouseInfluence`| `number`  | `1`                   | Strength of the mouse's influence on the progress particles.   |
+| `gravityX`      | `number`  | `0`                   | Horizontal gravity effect on the particles.                    |
+| `gravityY`      | `number`  | `0.1`                 | Vertical gravity effect on the particles.                      |
+| `mouseRepel`    | `boolean` | `false`               | If true, particles will be repelled by the mouse.              |
+| `groupColours`  | `string[]`| `['#0055ff', '#0077ff', '#1177ff', '#11aaff']` | Array of colors for the different groups of particles.         |
+
+## Running Tests
+
+To run tests for the library:
+
+1. Clone the repository.
+2. Run the following commands:
+
+```bash
+npm install
+npm run test
+```
+
+
+This document outlines the test coverage for the `fluid-progressbar` component. The tests ensure that the component behaves as expected under various conditions.
+
+
+### 1. Progress Value
+
+- **Test:** Verify that the progress bar updates correctly when the `progress` input changes.
+- **Expected Result:** The progress bar should reflect the new progress value.
+
+### 2. Mouse Influence
+
+- **Test:** Verify that the mouse influence affects the progress particles as expected.
+- **Expected Result:** The particles should move according to the `mouseInfluence` value.
+
+### 3. Gravity Effects
+
+- **Test:** Verify that the gravity effects (`gravityX` and `gravityY`) influence the particles correctly.
+- **Expected Result:** The particles should move according to the specified gravity values.
+
+### 4. Mouse Repel
+
+- **Test:** Verify that the particles are repelled by the mouse when `mouseRepel` is true.
+- **Expected Result:** The particles should move away from the mouse pointer.
+
+### 5. Custom Colors
+
+- **Test:** Verify that the progress bar uses the specified `groupColours`.
+- **Expected Result:** The particles should display the colors defined in the `groupColours` array.
+
+## Example Test Implementation
+
+Below is an example of how you might implement these tests using Jasmine and Angular's testing utilities.
+
+
+This will run the test suite and ensure the library is working as expected.
+
+## Contributing
+
+Feel free to open an issue or a pull request if you would like to contribute to this project. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
