@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FluidProgressbarComponent } from './fluid-progressbar.component';
+import { FluidProgressbarComponent } from './fluid-progressbar/fluid-progressbar.component';
 
 
 

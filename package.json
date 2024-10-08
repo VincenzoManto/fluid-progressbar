@@ -1,15 +1,14 @@
 {
   "name": "fluid-progressbar",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "publish:npm": "ng test && npm version patch && npm publish"
+    "publish:npm": "npm version patch && npm publish"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^16.1.0",
     "@angular/common": "^16.1.0",
