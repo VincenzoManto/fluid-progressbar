@@ -56,6 +56,7 @@ Now, you can use the `<fluid-progressbar>` component in your templates:
   [gravityY]="0.05"
   [mouseRepel]="true"
   [groupColours]="['#ff0000', '#00ff00', '#0000ff']">
+  <h1>{{progress}}%</h1>
 </fluid-progressbar>
 ```
 
@@ -65,11 +66,12 @@ Now, you can use the `<fluid-progressbar>` component in your templates:
 <div>
   <fluid-progressbar
     [progress]="progressValue"
-    [mouseInfluence]="1"
+    [mouseInfluence]="0.1"
     [gravityX]="0.2"
     [gravityY]="0.1"
     [mouseRepel]="true"
     [groupColours]="['#0055ff', '#0077ff', '#1177ff', '#11aaff']">
+    <h1>{{progressValue}}%</h1>
   </fluid-progressbar>
 </div>
 ```
