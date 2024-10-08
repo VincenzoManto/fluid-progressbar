@@ -8,6 +8,8 @@
 
 Fluid Progress Bar is an Angular component that provides a customizable, fluid-like progress bar with interactive effects such as gravity, mouse influence, and custom color groups.
 
+*Based on ![Fluid Simulation CodePen](https://codepen.io/dissimulate/pen/nLNMKQ) by ![Dissumulate](https://codepen.io/dissimulate) who must be thanked*
+
 
 ![Fluid Progress Bar](media/example.gif)
 
