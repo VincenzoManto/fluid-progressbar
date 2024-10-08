@@ -1,6 +1,5 @@
 # Fluid Progress Bar Library
 
-![Tests](https://img.shields.io/github/actions/workflow/status/VincenzoManto/fluid-progressbar/test.yml?branch=main)
 ![Coverage](https://img.shields.io/codecov/c/github/VincenzoManto/fluid-progressbar)
 ![Downloads](https://img.shields.io/npm/dw/fluid-progressbar)
 ![License](https://img.shields.io/npm/l/fluid-progressbar)
