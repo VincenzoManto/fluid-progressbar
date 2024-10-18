@@ -1,12 +1,13 @@
 # Fluid ProgressBar for Angular
 
+Fluid ProgressBar is an Angular component that provides a customizable, fluid-like 🫗 progress bar with interactive effects such as gravity, mouse influence, and custom color groups. 💧
+
+
 ![Coverage](https://img.shields.io/codecov/c/github/VincenzoManto/fluid-progressbar)
 ![Downloads](https://img.shields.io/npm/dw/fluid-progressbar)
 ![License](https://img.shields.io/npm/l/fluid-progressbar)
 ![npm version](https://img.shields.io/npm/v/fluid-progressbar)
 
-
-Fluid ProgressBar is an Angular component that provides a customizable, fluid-like 🫗 progress bar with interactive effects such as gravity, mouse influence, and custom color groups. 💧
 
 > "Progress is not achieved by luck or accident, but by working on yourself daily." - Epictetus
 
