@@ -142,6 +142,10 @@ Below is an example of how you might implement these tests using Jasmine and Ang
 
 This will run the test suite and ensure the library is working as expected.
 
+## Automation
+
+This repo uses semantic-release. More info at [semantic release](https://github.com/semantic-release/semantic-release#how-does-it-work)
+
 ## Contributing
 
 Feel free to open an issue or a pull request if you would like to contribute to this project. For major changes, please open an issue first to discuss what you would like to change.
