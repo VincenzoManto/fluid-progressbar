@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "publish:npm": "npm version patch && npm publish",
-        "release": "light-release"
+    "release": "light-release"
   },
   "keywords": [
     "fluid",
@@ -57,6 +57,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "light-release": "^2.0.5",
     "ng-packagr": "^16.0.0",
     "typescript": "~5.1.3"
   }
